@@ -95,6 +95,11 @@ main {
 
 .image-equilibrium-content:active::before {
   opacity: 0.503;
+
+  h1,
+  .creator-info span {
+    color: var(--cyan);
+  }
 }
 
 .image-equilibrium-content:active .eye-view-icon {
@@ -151,10 +156,15 @@ main {
   label {
     font-size: 1rem;
     font-weight: 400;
-    color: var(--white);
+    color: var(--soft-blue);
 
-    span {
-      color: var(--soft-blue);
+    .name-creator {
+      color: var(--white);
     }
   }
+}
+
+.image-equilibrium-content:active ~ h1,
+.image-equilibrium-content:active ~ .creator-info .name-creator {
+  color: var(--cyan);
 }

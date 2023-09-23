@@ -93,6 +93,10 @@ main {
 .image-equilibrium-content:active::before {
   opacity: 0.503;
 }
+.image-equilibrium-content:active::before h1,
+.image-equilibrium-content:active::before .creator-info span {
+  color: var(--cyan);
+}
 
 .image-equilibrium-content:active .eye-view-icon {
   display: block;
@@ -142,8 +146,13 @@ main {
 .creator-info label {
   font-size: 1rem;
   font-weight: 400;
+  color: var(--soft-blue);
+}
+.creator-info label .name-creator {
   color: var(--white);
 }
-.creator-info label span {
-  color: var(--soft-blue);
+
+.image-equilibrium-content:active ~ h1,
+.image-equilibrium-content:active ~ .creator-info .name-creator {
+  color: var(--cyan);
 }/*# sourceMappingURL=style.css.map */
